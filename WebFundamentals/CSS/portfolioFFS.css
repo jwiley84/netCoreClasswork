@@ -1,0 +1,94 @@
+
+
+#silver {
+	height:auto;
+	width:925px;
+	background: linear-gradient(to right, black, grey, black);
+	margin: auto;
+}
+
+.red {
+	height:274px;
+	width:415px;
+	background-color: lightgrey;
+	display: inline-block;
+	margin: 20px;
+}
+.right {
+	margin-right: 0px;
+	vertical-align: top;
+}
+#redLeft {
+	background-image: url("../images/photo_of_me.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	border: 5px solid lightgrey;
+}
+
+.title-top {
+	margin:0px;
+	background-color: darkgrey;
+	font-size: 36px;
+	font-family: cursive;
+	height: 45px;
+	text-align: center;
+}
+
+.yellowImg {
+	margin-top: 0px;
+}
+
+#secondImg {
+	background-image: url("../images/photo_of_me.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.portfolioImg {
+	overflow: hidden;
+	width: 280px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#blue {
+	height: 75px;
+	background-color: lightgrey;
+	margin: 0px;
+}
+#name {
+	position: absolute;
+	left: 200px;
+	top: 15px;
+}
+#nickname {
+	position: absolute;
+	right: 200px;
+	top: 15px;
+}
+
+.yellow {
+	height: 435px;
+	width: 280px;
+	display: inline-block;
+	border: 2px solid grey;
+	}
+
+.green {
+	height: 135px;
+	background-color: green;
+	margin-top:5px;
+}
+
+.purple {
+	height: 115px;
+	width: 115px;
+	background-color: purple;
+	display: inline-block;
+}
+
+#right {
+	margin-left: 335px;
+	color: purple;
+
+}

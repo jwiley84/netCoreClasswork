@@ -1,0 +1,75 @@
+body {
+	background-color:  black;
+	background: linear-gradient(to right, grey , black);
+}
+#silver {
+	border: 25px solid grey;
+	height:625px;
+	width:1225px;
+	margin: auto;
+}
+
+.red {
+	height:135px;
+	width:450px;
+	background-color: red;
+	display: inline-block;
+	margin: 10px 15px 15px 10px;
+}
+
+img {
+	height: 175px;
+	width: 550px;
+	display: inline-block;
+	border: 5px solid grey;
+}
+
+#blue {
+	height: 75px;
+	background-color: #637713;
+	margin: 0px 0px 20px 0px;
+}
+.yellow {
+	height: 135px;
+	width: 380px;
+	background-color: yellow;
+	display: inline-block;
+	margin: 10px;
+}
+
+.green {
+	height: 135px;
+	background-color: green;
+	margin-top:5px;
+}
+
+#name {
+	width: 400px;
+	position: absolute;
+	left: 50px;
+	top: 28px;
+}
+
+#name h1 {
+	text-align: left;
+	margin-left: 20px;
+	font-family: 'Special Elite', cursive, sans-serif;
+	font-size: 40px;
+}
+
+#nickname {
+	width: 500px;
+	position: absolute;
+	right: 50px;
+	top: 28px;
+}
+
+#nickname h1 {
+	font-style: italic;
+	text-align: right;
+	margin-right: 20px;
+}
+
+h1 {
+	color: #c9f42d
+}
