@@ -1,0 +1,49 @@
+div {
+	border: 1px solid white;
+	margin: 10px;
+}
+
+#silver {
+	height:625px;
+	width:625px;
+	background-color: black;
+}
+
+.red {
+	height:135px;
+	width:285px;
+	background-color: red;
+	display: inline-block;
+}
+
+#blue {
+	height: 135px;
+	background-color: blue;
+	margin-top:5px;
+}
+.yellow {
+	height: 135px;
+	width: 180px;
+	background-color: yellow;
+	display: inline-block;
+}
+
+.green {
+	height: 135px;
+	background-color: green;
+	margin-top:5px;
+}
+
+.purple {
+	height: 115px;
+	width: 115px;
+	background-color: purple;
+	display: inline-block;
+}
+
+#right {
+	margin-left: 335px;
+	color: purple;
+	
+}
+
