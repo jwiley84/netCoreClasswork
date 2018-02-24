@@ -1,0 +1,206 @@
+body {
+    font-family: sans-serif;
+}
+.container {
+    border: 1px solid transparent;
+    width: 970px;
+    height: 1000px;
+    background: linear-gradient(to bottom, #EDEDED, white, white, white);
+}
+.globeIMG{
+    border: 1px solid transparent;
+    height: 100px;
+    margin-bottom: 0px;
+}
+h1 {
+    display: inline-block;
+    padding-right: 100px;
+    margin-left: 90px;
+    margin-top: 15px;
+    font-size: 3em;
+    color: #474747;
+}
+
+#globe {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+.textBlue {
+    color: #22649E;
+}
+.titleBar {
+    background: linear-gradient(#23649E, #4f81ac, #23649E);
+    height: 40px;
+    width: inherit;
+    margin: 0px;
+    position: absolute;
+    padding-top: 10px;
+    margin-top:-47px;
+
+}
+h2 {
+    top: 13%;
+    left: 9px;
+    color: white;
+   }
+
+   .infoBar {
+       padding-top: 25px;
+       width: 195px;
+       height: 190px;
+       border: 1px solid transparent;
+       
+   }
+.textRed {
+       color: red;
+   }
+button {
+       width: 190px;
+       color: white;
+       margin: 2px;
+       box-shadow: 2px 2px 5px black;
+       height: 30px;
+       border-radius: 3px;
+       border: 1px solid transparent;
+   }
+
+p {
+    width: inherit;
+}
+.bold {
+    font-weight: 800;
+}
+
+#big {
+    font-size: 15px;
+}
+
+#medium {
+    font-size: 13px;
+}
+#btn-Watch {
+    background-color: #3B78AC;
+}
+
+#btn-More {
+    background-color: #EE8000;
+}
+.infoBar hr {
+    width: 197px;
+    position: absolute;
+    left: 10px;
+}
+
+.dojoAd {
+    background-image: url("../images/ad_background.png");
+    height: 270px;
+    width: 196px;
+    background-size: contain;
+    background-position: center;
+    margin-top: 36px;
+    padding-top: 15px;
+}
+h3 {
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 0px;
+}
+#ninjaImg {
+    width: 80px;
+    margin: -20px  90px 10px 60px;
+}
+
+button#btn-Learn {
+    width: 170px;
+    background-color: #08C4DF;
+    margin-left: 13px;
+    
+}
+.sideBar {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    margin: 0px;
+}
+
+.mainContent {
+    display: inline-block;
+    width: 760px;
+    margin: 0px;
+    padding-top: 15px;
+    border: 1px solid transparent;
+    height: 635px;
+    position: relative;
+    
+}
+#home {
+    height: 20px;
+    width: auto;
+}  
+#phone {
+    height: 40px;
+    width: auto;  
+    display: inline-block;
+    margin-left: 575px;
+    margin-top: -30px;
+    z-index: 1;
+}
+
+.tiny {
+    font-size: 10px;
+    color: grey;
+    display: inline-block;
+}
+.phone {
+    text-align: right;
+    margin-bottom: 0px;
+}
+#homeIcon {
+    margin-top: -10px;
+}
+
+.textLightBlue {
+   color:aqua;
+}
+#bolder {
+   font-size: 23px;
+   margin-top: -35px;
+}
+#lastPhone {
+   margin-top: 0px;
+}
+.roundTrip {
+    width: 300px;
+    height: auto;
+    margin-left: 250px;
+}
+
+.bigThreeBox {
+    width: 740px;
+    border: 5px solid #0085E0;
+    height: 160px;
+    margin-left: 210px;
+    position: relative;
+    border-bottom-color: transparent;
+}
+
+.bigThreeBox img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 140px;
+    width: auto;
+}
+
+.b3 {
+    margin-top: 10px;
+}
+.bigThreeBox p {
+    margin-left: 170px;
+    width: 570px;
+}
