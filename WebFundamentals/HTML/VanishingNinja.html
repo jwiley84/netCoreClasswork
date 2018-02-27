@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+    <title>Vanishing Cthulhu</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".empty").click(function () {
+                $(this).toggleClass("pic");
+            });
+            $("button").click(function () {
+                $(".empty").addClass("pic");
+            });
+        });
+    </script>
+    <style>
+        .container {
+            height: 600px;
+            width: 970px;
+        }
+
+        .pic {
+            background-image: url("http://shirtigo.co/wp-content/uploads/2016/08/cthulhuchurch.jpg");
+            background-size: contain;
+        }
+
+        h2 {
+            color: purple;
+            text-align: center;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        button {
+            width: 150px;
+            background-color: darkgreen;
+            font-weight: 800;
+            color: purple;
+            border: 1px solid transparent;
+            border-radius: 20px;
+            height: 75px;
+            font-size: 24px;
+        }
+
+        .empty {
+            width: 230px;
+            height: 230px;
+            margin: 3px;
+            margin-bottom: 0;
+            background-color: black;
+            display: inline-block;
+            border: 1px dashed grey;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Vanishing Ninja</h2>
+        <div class="empty pic" id="pic1"></div>
+        <div class="empty pic" id="pic2"></div>
+        <div class="empty pic" id="pic3"></div>
+        <div class="empty pic" id="pic4"></div>
+        <div class="empty pic" id="pic5"></div>
+        <div class="empty pic" id="pic6"></div>
+        <div class="empty pic" id="pic7"></div>
+        <div class="empty pic" id="pic8"></div>
+        <button>RESET</button>
+    </div>
+</body>
+
+</html>
