@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+    <title>jQuery for AHO</title>
+    <style>
+        .container {
+            width: 970px;
+            background: linear-gradient(to bottom right, green, green, white, white, black, purple);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            text-align: center;
+        }
+
+        /*.click {
+            height: 100px;
+        }*/
+
+        #lightbulb {
+            height: 10px;
+            width: auto;
+        }
+
+        .addClass {
+            background-color: purple;
+            border: 2px solid yellow;
+            color: white;
+        }
+
+        /* "Nyarlathotep nilgh'ri llll wgah'nyar gof'nn Nyarlathotep hrii uh'e 'bthnk" -->*/
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#gameRules").click(function () {
+                $(".gameRule").toggle();
+            });
+            $("#click").click(function () {
+                $("#alter").css("background-color", "yellow");
+            });
+            $("#hide").click(function () {
+                $("#cthulhu").hide();
+            });
+            $("#show").click(function () {
+                $("#cthulhu").show();
+            });
+            $("#slideUp").click(function () {
+                $("#lightBulb").slideUp();
+            });
+            $("#slideDown").click(function () {
+                $("#lightBulb").slideDown();
+            });
+            $("#slideToggle").click(function () {
+                $("#lightBulb2").slideToggle();
+            });
+            $("#fadeOut").click(function () {
+                $("#Yogg").fadeOut();
+            });
+            $("#fadeIn").click(function () {
+                $("#Yogg").fadeIn();
+            });
+            $("#addClass").click(function () {
+                $("#addClass").addClass("addClass");
+            });
+            $("#before").click(function () {
+                $("#specific").before("Sup");
+            });
+            $("#after").click(function () {
+                $("#specific").after("Yo");
+            });
+            $("#append").click(function () {
+                $("ol").append("<li>Added!</li>");
+            });
+            $("#html").click(function () {
+                $("#yigg").html("<strong>Nyarlathotep</strong> nilgh'ri llll wgah'nyar gof'nn Nyarlathotep hrii uh'e 'bthnk");
+            });
+            $("#attr").click(function () {
+                $("#attrs").attr("style", "background-color: red; width: 100px; height: 100px");
+            });
+            $("#text").click(function () {
+                $("#broken").text("<strong>Nyarlathotep</strong> nilgh'ri llll wgah'nyar.");
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>jQuery for AHO</h1>
+        <h5>Semi-comprehenive list</h5>
+        <button id="gameRules">Toggle Game Rules</button>
+        <hr>
+        <div class="row" id="alter">
+            <h2>.Click</h2>
+            <button id="click">.Click</button>
+            <p>Upon clicking, the background of this div row will change to solid yellow. Ouch.</p>
+            <p> When you click something, something happens. The End</p>
+            <p class="gameRule">This could be used to start battles, show investigator, or choose Event</p>
+        </div>
+        <hr>
+        <div class="row">
+            <h2>.Hide/.Show</h2>
+            <button id="hide">.hide</button>
+            <button id="show">.show</button>
+            <img id="cthulhu" src="https://vignette.wikia.nocookie.net/villains/images/4/4d/Cthulhu_by_blizzard67.jpg/revision/latest/scale-to-width-down/300?cb=20160225182355"
+                alt='Cthulhu'>
+
+            <p>Click '.hide' and this image will disappear.</p>
+            <p>Click '.show' and its comes back.</p>
+            <p class="gameRule">This could be to lose investigators in time and space</p>
+        </div>
+        <hr>
+        <div class="row">
+            <h2>.Toggle</h2>
+            <p>Upon clicking, an element will turn on or off.</p>
+            <p>The difference between this and hide/show is that you only need ONE button.</p>
+            <p>For example, the 'Toggle Game Rules' button at the top of the pages shows or hides the game rules.</p>
+            <p class="gameRule">"Toggle" doom track.</p>
+        </div>
+        <hr>
+        <div class="row">
+            <h2>.SlideDown/.SlideUp</h2>
+            <img alt="lightBulb" id="lightBulb" height="225px" src="https://i.pinimg.com/736x/21/3a/9e/213a9e9c96bcd3acc685a874f48ff7d8--bulbs-lights.jpg">
+            <button id="slideUp">.Slide Up</button>
+            <button id="slideDown">Slide Down</button>
+            <p>Click 'Slide Up' and the lightbulb will slide up and disappear.</p>
+            <p>Click 'Slide Up' and the lightbulb comes back.</p>
+            <p class="gameRule">Slide up and down the offical rules of the game from the navbar</p>
+        </div>
+        <hr>
+        <div class="row">
+            <h2>.SlideToggle</h2>
+            <img alt="lightBulb" id="lightBulb2" height="225px" src="https://i.pinimg.com/736x/21/3a/9e/213a9e9c96bcd3acc685a874f48ff7d8--bulbs-lights.jpg">
+            <button id="slideToggle">.Slide Toggle</button>
+            <p>Upon clicking, an element will slide up or down, depending on it's previous/current state.</p>
+            <p>The difference between this and up/down is that you only need ONE button.</p>
+            <p class="gameRule">"SlideToggle" the game map.</p>
+        </div>
+        <hr>
+        <div class="row">
+            <h2>.FadeIn/.FadeOut</h2>
+            <img alt="Yogg" id="Yogg" height="225px" src="https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/thumb/3/39/Yogg-Saron_Dungeon_Companion.jpg/300px-Yogg-Saron_Dungeon_Companion.jpg?version=7c65c9c86b7b31ec4adf6fa7e3094225">
+            <button id="fadeIn">.FadeIn</button>
+            <button id="fadeOut">.FadeOUt</button>
+            <p>Click 'Fade In' and the monster will appear.</p>
+            <p>Click 'Fade Out' and it goes away.</p>
+            <!--<p class="gameRule">Slide up and down the offical rules of the game from the navbar</p>-->
+        </div>
+        <hr>
+        <div class="row">
+            <h2>.addClass</h2>
+            <button id="addClass">.addClass</button>
+            <p>Upon clicking, a class will be added to a connected element.</p>
+            <p>For example, this button will change.</p>
+            <p class="gameRule">Add the 'insane' or 'unconsious' class to investigators.</p>
+        </div>
+        <hr>
+        <div class="row">
+            <h2>.before/.after</h2>
+            <button id="before">.before</button>
+            <button id="after">.after</button>
+            <p id="specific">Click 'Before' and a paragraph will appear above this one. Click 'after' and it appears below.</p>
+            <!--<p class="gameRule">Slide up and down the offical rules of the game from the navbar</p>-->
+        </div>
+        <hr>
+        <div class="row">
+            <h2>.append</h2>
+            <button id="append">.append</button>
+            <p>Upon clicking, insert content, specified by the parameter, to the end of each element in the set of matched elements..</p>
+            <!--<p class="gameRule">Add the 'insane' or 'unconsious' class to investigators.</p>-->
+            <p>This button adds items to the list</p>
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+            </ol>
+        </div>
+        <hr>
+        <div class="row">
+            <h2>.html</h2>
+            <button id="html">.html</button>
+            <p>Upon clicking, the selected element gets replaced with whateverr HTML is passed in the function.</p>
+            <!--<p class="gameRule">Add the 'insane' or 'unconsious' class to investigators.</p>-->
+            <p id="yigg">The paragraph becomes Yogg.</p>
+        </div>
+        <hr>
+        <div class="row" >
+            <h2>.attr</h2>
+            <button id="attr">.attr</button>
+            <p>Upon clicking, the selected element recieves an attribute. This box turns red.</p>
+            <div id="attrs" style="width: 100px; height:100px; border: 1px solid black"></div>
+            <!--<p class="gameRule">Add the 'insane' or 'unconsious' class to investigators.</p>-->
+        </div>
+        <hr>
+        <div class="row">
+            <h2>.text</h2>
+            <button id="text">.text</button>
+            <p>Similar to .html, this will change the content of text element, but will NOT convert HTML tags.</p>
+            <p id="broken">Watch this!</p>
+            <!--<p class="gameRule">Add the 'insane' or 'unconsious' class to investigators.</p>-->
+        </div>
+        <hr>
+    </div>
+    <!--.data-->
+</body>
+
+</html>
