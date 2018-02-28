@@ -9,12 +9,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
-            $(".empty").click(function () {
+            $(".empty").hover(function () {
                 $(this).toggleClass("pic");
+                $(this).toggleClass("altPic");
             });
-            $("button").click(function () {
+            /*$("button").click(function () {
                 $(".empty").addClass("pic");
-            });
+            });*/
         });
     </script>
     <style>
@@ -28,6 +29,11 @@
             background-size: contain;
         }
 
+        .altPic {
+            background-image: url("https://st.depositphotos.com/2039183/4508/i/950/depositphotos_45083305-stock-photo-stained-glass-window-of-an.jpg");
+            background-size: contain;
+        }
+
         h2 {
             color: purple;
             text-align: center;
@@ -37,21 +43,10 @@
             background-color: black;
         }
 
-        button {
-            width: 150px;
-            background-color: darkgreen;
-            font-weight: 800;
-            color: purple;
-            border: 1px solid transparent;
-            border-radius: 20px;
-            height: 75px;
-            font-size: 24px;
-        }
-
         .empty {
-            width: 230px;
-            height: 230px;
-            margin: 3px;
+            width: 200px;
+            height: 200px;
+            margin: 15px;
             margin-bottom: 0;
             background-color: black;
             display: inline-block;
@@ -63,16 +58,15 @@
 
 <body>
     <div class="container">
-        <h2>Vanishing Ninja</h2>
-        <div class="empty pic"></div>
-        <div class="empty pic"></div>
-        <div class="empty pic"></div>
-        <div class="empty pic"></div>
-        <div class="empty pic"></div>
-        <div class="empty pic"></div>
-        <div class="empty pic"></div>
-        <div class="empty pic"></div>
-        <button>RESET</button>
+        <h2>Vanishing Cthulhu</h2>
+        <div class="empty altPic"></div>
+        <div class="empty altPic"></div>
+        <div class="empty altPic"></div>
+        <div class="empty altPic"></div>
+        <div class="empty altPic"></div>
+        <div class="empty altPic"></div>
+        <div class="empty altPic"></div>
+        <div class="empty altPic"></div>
     </div>
 </body>
 

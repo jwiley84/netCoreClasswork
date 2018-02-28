@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FIX ME</title>
+    <!--<link type="text/css" rel="stylesheet" href="css/splash.css">-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("img").click(function () {
+                var temp = $(this).attr("altSrc");
+                console.log(temp);
+                $(this).attr("altSrc", "src");
+                $(this).attr("src", temp);
+             });
+            });
+    </script>
+    <style>
+    /*Yes, I know this is wrong. And cheating. :D*/
+    .block {
+        display: block;
+    }
+    button {
+        margin-bottom: 10px;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>Ninja To Cat</h1>
+    
+    <div class="swap"><img class="block" src="../images/ninja0.png" altSrc="../images/cat0.png"></div>
+    <div class="swap"><img class="block" src="../images/ninja1.png" altSrc="../images/cat1.png"></div>
+    <div class="swap"><img class="block" src="../images/ninja2.png" altSrc="../images/cat2.png"></div>
+    <div class="swap"><img class="block" src="../images/ninja3.png" altSrc="../images/cat3.png"></div>
+    <div class="swap"><img class="block" src="../images/ninja4.png" altSrc="../images/cat4.png"></div>
+   
+</body>
+
+</html>
