@@ -1,0 +1,55 @@
+#container {
+    width: 1440px;
+    border: 15px solid grey;
+    background-color: black;
+    height: 900px;
+}
+
+
+#menuBox {
+    width: 375px;
+    height: auto;
+    background-color: lightgrey;
+    border: 10px solid grey;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 250px;
+}
+
+#menuBox h1 {
+    color: orange;
+    text-align:  center;
+}
+
+#menuBox button {
+    color: black;
+    background-color:  white;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    height: 40px;
+    width: 95px;
+    margin: 5px;
+}
+#arena {
+    width: 325px;
+    height: 100px;
+    margin: 0px 25px 25px 25px;   
+}
+#players {
+    width: 325px;
+    height: 100px;
+    margin: 0px 25px 25px 25px;   
+}
+img:nth-child(3) {
+    margin-left: 700px;
+
+}
+/*#menuBox_toon {
+    width: 375px;
+    height: auto;
+    background-color: lightgrey;
+    border: 10px solid grey;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 250px;
+}*/

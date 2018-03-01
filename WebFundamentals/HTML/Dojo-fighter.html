@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+    <title>Dojo Fighter!</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/Dojo-fighter.css">
+    <script>
+        $(document).ready(function () {
+            $("#players").hide();
+            //specific button.hover function {
+            //background-image: change div's bg to specific jpg
+            //}
+            //var backgrounds = ["beach.jpg", "earth.jpg", "dojo.jpg", "forest.jpg", "matrix.jpg", "snow.jpg"];
+            //WORK IN PROGRESS, MOVING ON FOR TIME    
+
+            $('#choice_beach').hover(function () {
+                $("#container").attr("style",
+                    "background-image: url('images/beach.jpg'); background-size: contain");
+            });
+            $('#choice_planet').hover(function () {
+                $("#container").attr("style",
+                    "background-image: url('images/earth.jpg'); background-size: cover; background-repeat: none; background-position: center"
+                );
+            });
+            $('#choice_dojo').hover(function () {
+                $("#container").attr("style",
+                    "background-image: url('images/dojo.jpg'); background-size: cover; background-repeat: none; background-position: center"
+                );
+            });
+            $('#choice_forest').hover(function () {
+                $("#container").attr("style",
+                    "background-image: url('images/forest.jpg'); background-size: contain");
+            });
+            $('#choice_matrix').hover(function () {
+                $("#container").attr("style",
+                    "background-image: url('images/matrix.jpg'); background-size: cover; background-repeat: none; background-position: center"
+                );
+            });
+            $('#choice_snow').hover(function () {
+                $("#container").attr("style",
+                    "background-image: url('images/snow.jpg'); background-size: cover; background-repeat: none; background-position: center"
+                );
+            });
+
+
+            /*change to choice fighter menu*/
+            $('#choice_beach').click(function () {
+                    $("#container").attr("style",
+                        "background-image: url('images/beach.jpg'); background-size: contain");
+                },
+                function () {
+                    $("#arena").hide();
+                    $("#players").show();
+                    $("#menuBox h1").html("Select Players");
+                });
+            $('#choice_planet').click(function () {
+                $("#container").attr("style",
+                    "background-image: url('images/earth.jpg'); background-size: cover; background-repeat: none; background-position: center"
+                );
+            }, function () {
+                $("#arena").hide();
+                $("#players").show();
+                $("#menuBox h1").html("Select Players");
+            });
+            $('#choice_dojo').click(function () {
+                $("#container").attr("style",
+                    "background-image: url('images/dojo.jpg'); background-size: cover; background-repeat: none; background-position: center"
+                );
+            }, function () {
+                $("#arena").hide();
+                $("#players").show();
+                $("#menuBox h1").html("Select Players");
+            });
+            $('#choice_forest').click(function () {
+                    $("#container").attr("style",
+                        "background-image: url('images/forest.jpg'); background-size: contain");
+                },
+                function () {
+                    $("#arena").hide();
+                    $("#players").show();
+                    $("#menuBox h1").html("Select Players");
+                }
+            );
+            $('#choice_matrix').click(function () {
+                    $("#container").attr("style",
+                        "background-image: url('images/matrix.jpg'); background-size: cover; background-repeat: none; background-position: center"
+                    );
+                },
+                function () {
+                    $("#arena").hide();
+                    $("#players").show();
+                    $("#menuBox h1").html("Select Players");;
+                });
+            $('#choice_snow').click(function () {
+                    $("#container").attr("style",
+                        "background-image: url('images/snow.jpg'); background-size: cover; background-repeat: none; background-position: center"
+                    );
+                },
+                function () {
+                    $("#arena").hide();
+                    $("#players").show();
+                    $("#menuBox h1").html("Select Players");
+                });
+            
+            var toons = ["0","images/raphael.png","images/donny.png","images/leo.png","images/mikey.png"];    
+
+            $("#players").change(function () {
+                var pick = $("option:selected").val();
+                if (pick != 0) {
+                    /*add <img> using .html() with a source of toons[pick]*/
+                    var fighter = "<img src='" + toons[pick] + "'>";
+                    console.log(fighter);
+                    $("#container").append(fighter);
+                }
+            });
+
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="container">
+        <div id="menuBox">
+            <h1>Select Arena</h1>
+            <div id="arena">
+                <button id="choice_beach">Beach</button>
+                <button id="choice_planet">Planet</button>
+                <button id="choice_dojo">Dojo</button>
+                <button id="choice_forest">Forest</button>
+                <button id="choice_matrix">Matrix</button>
+                <button id="choice_snow">Snow</button>
+            </div>
+            <div id="players">
+                <form>
+                    <select id="p1">
+                        <option>No one selected</option>
+                        <option value="1">Raph</option>
+                        <option value="2">Donny</option>
+                        <option value="3">Leonardo</option>
+                        <option value="4">Mikey</option>
+                    </select>
+                    <select id="p2">
+                        <option>No one selected</option>
+                        <option value="1">Raph</option>
+                        <option value="2">Donny</option>
+                        <option value="3">Leonardo</option>
+                        <option value="4">Mikey</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
