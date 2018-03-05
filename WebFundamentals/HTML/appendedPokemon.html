@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Gotta Catch'em All</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(document).on("click", "img", function () {
+                $("#poke-data").html("<div style='text-align: center; padding: 0' id='name'></div><h1 style='text-align: center'  id='name'></h1><div id='img'></div><h4>Types</h4><ul id='typelist'></ul><h4 id='height'>Height</h4><h4 id='weight'>Weight</h4>");
+                
+                var poke = $(this).attr("src");
+
+                var pokenum = "";
+                for (var i = 28; i <= 31; i++) {
+                    pokenum += poke[i];
+                };
+                pokenum = parseInt(pokenum);
+                
+                $.get("https://pokeapi.co/api/v2/pokemon/" + pokenum + "/", function (res) {
+                    $("#name").append("<h1 style='color: red'>" + res.name + "</h1>");
+                    $("#img").append("<img src='" + poke + "'>");
+                    var height = res.height;
+                    var weight = res.weight;
+                    $("#height").append("<p>" + height + "</p>")
+                    $("#weight").append("<p>" + weight + "</p>")
+                    for (var i = 0; i < res.types.length; i++) {
+                        $("#typelist").append("<li>" + res.types[i].type.name + "</li>")    
+                    }
+                }, "json")
+            });
+            
+            for (var i = 1; i <= 151; i++) {
+                $("#pokemon").append("<img id='pokeNo_" + i +"' src='http://pokeapi.co/media/img/" + i + ".png'>");
+            }
+        });
+    </script>
+    <style>
+        #pokemon {
+            width: 900px;
+            border: 5px solid blue;
+            margin: auto;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        #poke-data {
+            width: 150px;
+            border: 15px solid red;
+            height: 450px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="pokemon"></div>
+    <div id="poke-data"></div>
+
+</body>
+</html>
