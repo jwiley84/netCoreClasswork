@@ -15,7 +15,7 @@ DOWNLEFT = 'downleft'
 DOWNRIGHT = 'downright'
 UPLEFT = 'upleft'
 UPRIGHT = 'upright'
-MOVESPEED = 4
+MOVESPEED = 9;
 
 # Set up the colors.
 BLACK = (0, 0, 0)
