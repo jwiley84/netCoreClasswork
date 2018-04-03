@@ -1,0 +1,10 @@
+/home/jmwiley/Desktop/DojoAssignments/netCore/algoPractice/bin/Debug/netcoreapp2.0/algoPractice.deps.json
+/home/jmwiley/Desktop/DojoAssignments/netCore/algoPractice/bin/Debug/netcoreapp2.0/algoPractice.runtimeconfig.json
+/home/jmwiley/Desktop/DojoAssignments/netCore/algoPractice/bin/Debug/netcoreapp2.0/algoPractice.runtimeconfig.dev.json
+/home/jmwiley/Desktop/DojoAssignments/netCore/algoPractice/bin/Debug/netcoreapp2.0/algoPractice.dll
+/home/jmwiley/Desktop/DojoAssignments/netCore/algoPractice/bin/Debug/netcoreapp2.0/algoPractice.pdb
+/home/jmwiley/Desktop/DojoAssignments/netCore/algoPractice/obj/Debug/netcoreapp2.0/algoPractice.csproj.CoreCompileInputs.cache
+/home/jmwiley/Desktop/DojoAssignments/netCore/algoPractice/obj/Debug/netcoreapp2.0/algoPractice.AssemblyInfoInputs.cache
+/home/jmwiley/Desktop/DojoAssignments/netCore/algoPractice/obj/Debug/netcoreapp2.0/algoPractice.AssemblyInfo.cs
+/home/jmwiley/Desktop/DojoAssignments/netCore/algoPractice/obj/Debug/netcoreapp2.0/algoPractice.dll
+/home/jmwiley/Desktop/DojoAssignments/netCore/algoPractice/obj/Debug/netcoreapp2.0/algoPractice.pdb

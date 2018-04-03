@@ -1,0 +1,10 @@
+/home/jmwiley/Desktop/DojoAssignments/netCore/firstNetCore/bin/Debug/netcoreapp2.0/firstNetCore.deps.json
+/home/jmwiley/Desktop/DojoAssignments/netCore/firstNetCore/bin/Debug/netcoreapp2.0/firstNetCore.runtimeconfig.json
+/home/jmwiley/Desktop/DojoAssignments/netCore/firstNetCore/bin/Debug/netcoreapp2.0/firstNetCore.runtimeconfig.dev.json
+/home/jmwiley/Desktop/DojoAssignments/netCore/firstNetCore/bin/Debug/netcoreapp2.0/firstNetCore.dll
+/home/jmwiley/Desktop/DojoAssignments/netCore/firstNetCore/bin/Debug/netcoreapp2.0/firstNetCore.pdb
+/home/jmwiley/Desktop/DojoAssignments/netCore/firstNetCore/obj/Debug/netcoreapp2.0/firstNetCore.csproj.CoreCompileInputs.cache
+/home/jmwiley/Desktop/DojoAssignments/netCore/firstNetCore/obj/Debug/netcoreapp2.0/firstNetCore.AssemblyInfoInputs.cache
+/home/jmwiley/Desktop/DojoAssignments/netCore/firstNetCore/obj/Debug/netcoreapp2.0/firstNetCore.AssemblyInfo.cs
+/home/jmwiley/Desktop/DojoAssignments/netCore/firstNetCore/obj/Debug/netcoreapp2.0/firstNetCore.dll
+/home/jmwiley/Desktop/DojoAssignments/netCore/firstNetCore/obj/Debug/netcoreapp2.0/firstNetCore.pdb
